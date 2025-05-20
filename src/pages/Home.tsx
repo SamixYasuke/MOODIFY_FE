@@ -1,13 +1,25 @@
 import { useState } from "react";
+import DocumentMeta from "react-document-meta";
 import reactLogo from "../assets/react.svg";
 import viteLogo from "/vite.svg";
-import "../App.css";
 
 const Home = () => {
   const [count, setCount] = useState(0);
 
+  const meta: any = {
+    title: "Home Page || My App",
+    description: "I am a description, and I can create multiple tags",
+    canonical: "http://example.com/path/to/page",
+    meta: {
+      charset: "utf-8",
+      name: {
+        keywords: "react,meta,document,html,tags",
+      },
+    },
+  };
+
   return (
-    <>
+    <DocumentMeta {...meta}>
       <div>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
@@ -28,7 +40,7 @@ const Home = () => {
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
       </p>
-    </>
+    </DocumentMeta>
   );
 };
 
