@@ -1,11 +1,6 @@
-import { useState } from "react";
 import DocumentMeta from "react-document-meta";
-import reactLogo from "../assets/react.svg";
-import viteLogo from "/vite.svg";
 
 const Home = () => {
-  const [count, setCount] = useState(0);
-
   const meta: any = {
     title: "Home Page || My App",
     description: "I am a description, and I can create multiple tags",
