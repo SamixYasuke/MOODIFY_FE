@@ -3,11 +3,9 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import NotFoundPage from "./pages/NotFound";
 import Layout from "./components/Layout";
-import { HelmetProvider } from "react-helmet-async";
 
 const App = () => {
   return (
-    <HelmetProvider>
       <Router>
         <Routes>
           <Route path="/" element={<Layout />}>
@@ -17,7 +15,6 @@ const App = () => {
           </Route>
         </Routes>
       </Router>
-    </HelmetProvider>
   );
 };
 
