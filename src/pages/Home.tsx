@@ -1,10 +1,10 @@
 import DocumentMeta from "react-document-meta";
 
-const Home = () => {
+const Home: React.FC = () => {
   const meta: any = {
-    title: "Home Page || My App",
+    title: "Moodify",
     description: "I am a description, and I can create multiple tags",
-    canonical: "http://example.com/path/to/page",
+    canonical: "http://localhost:5173/",
     meta: {
       charset: "utf-8",
       name: {
