@@ -1,8 +1,9 @@
 import DocumentMeta from "react-document-meta";
+import HeroSection from "../components/HeroSection";
 
 const Home: React.FC = () => {
   const meta: any = {
-    title: "Moodify",
+    title: "Moodify | Home",
     description: "I am a description, and I can create multiple tags",
     canonical: "http://localhost:5173/",
     meta: {
@@ -16,7 +17,7 @@ const Home: React.FC = () => {
   return (
     <DocumentMeta {...meta}>
       <div>
-        <h1>MAIN CONTENT!!!!!!!!!!!</h1>
+        <HeroSection />
       </div>
     </DocumentMeta>
   );

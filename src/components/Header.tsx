@@ -33,12 +33,12 @@ const Header: React.FC = () => {
         <div className="hidden md:flex gap-2 items-center justify-center w-[182px] text-center bg-white text-[rgb(34,63,89,1)] font-semibold box-content py-4 px-3 text-sm border-[rgb(96,181,255,1)] border-2 rounded-lg cursor-pointer group">
           <p>Download App</p>
           <img
-            className="w-[15.5px] h-[10.25px] object-contain ml-2 transition-transform duration-200 group-hover:-translate-y-0.5"
+            className="w-[15.5px] h-[10.25px] object-contain ml-2 transition-transform duration-200 group-hover:-rotate-180"
             src="/images/arrow-down.png"
             alt="arrow facing down"
           />
         </div>
-        <menu className="bloclk md:hidden">
+        <menu className="block md:hidden">
           <MobileMenu />
         </menu>
       </header>
