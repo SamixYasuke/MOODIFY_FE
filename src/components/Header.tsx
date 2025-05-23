@@ -3,13 +3,15 @@ import MobileMenu from "./MobileMenu";
 const Header: React.FC = () => {
   return (
     <>
-      <header className="bg-blue-500 flex justify-between items-center px-7 md:px-14">
+      <header className="bg-[rgb(34,60,83,1)] flex justify-between items-center px-6 md:px-14">
         <div className="flex items-center">
-          <img
-            className="w-28 h-32 md:w-24 md:h-28 object-contain"
-            src="/images/Logo.png"
-            alt="Moodify Logo"
-          />
+          <a href="/">
+            <img
+              className="w-28 h-24 md:w-24 md:h-28 object-contain"
+              src="/images/Logo.png"
+              alt="Moodify Logo"
+            />
+          </a>
         </div>
         <ul className="space-x-4 gap-10 hidden md:flex">
           <li>
