@@ -1,6 +1,7 @@
 import DocumentMeta from "react-document-meta";
 import HeroSection from "../components/HeroSection";
 import MoodPlanningSection from "../components/MoodPlanningSection";
+import FaqSection from "../components/FaqSection";
 
 const Home: React.FC = () => {
   const meta: any = {
@@ -20,6 +21,7 @@ const Home: React.FC = () => {
       <div>
         <HeroSection />
         <MoodPlanningSection />
+        <FaqSection />
       </div>
     </DocumentMeta>
   );
