@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FaPlus, FaMinus } from "react-icons/fa6";
+import * as motion from "motion/react-client";
 
 const FaqSection = () => {
   interface FaqContent {
@@ -44,11 +45,17 @@ const FaqSection = () => {
         </h2>
         <div className="px-6">
           {faqContents.map((faq, index) => (
-            <div
-              className={`${
-                openIndex === index ? `bg-[rgb(246,246,246,1)]` : `bg-white`
-              } rounded-4xl p-7 mb-4`}
+            <motion.div
               key={index}
+              className="rounded-4xl p-7 mb-4"
+              initial={{ backgroundColor: "rgb(255, 255, 255)" }}
+              animate={{
+                backgroundColor:
+                  openIndex === index
+                    ? "rgb(246, 246, 246)"
+                    : "rgb(255, 255, 255)",
+              }}
+              transition={{ duration: 0.3, ease: "easeInOut" }}
             >
               <div
                 className="flex items-center justify-between cursor-pointer"
@@ -70,11 +77,17 @@ const FaqSection = () => {
                 )}
               </div>
               {openIndex === index && (
-                <p className="text-sm leading-[22px] font-normal text-[rgba(34,63,89,1)] pt-7 pb-5">
+                <motion.p
+                  className="text-sm leading-[22px] font-normal text-[rgba(34,63,89,1)] pt-7 pb-5"
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  exit={{ opacity: 0 }}
+                  transition={{ duration: 0.5, ease: "easeIn" }}
+                >
                   {faq.answer}
-                </p>
+                </motion.p>
               )}
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
