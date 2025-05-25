@@ -47,7 +47,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row justify-between items-start md:items-center mt-20 border-t border-[rgba(72,136,191,1)] px-10">
+      <div className="w-[90%] mx-auto flex flex-col md:flex-row justify-between items-start md:items-center mt-20 border-t border-[rgba(72,136,191,1)]">
         <p className="text-center text-white text-xs font-normal leading-5 pt-10">
           © {new Date().getFullYear()} Moodify. All rights reserved.
         </p>
