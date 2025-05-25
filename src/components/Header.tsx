@@ -1,4 +1,4 @@
-import MobileMenu from "./MobileMenu";
+import MobileMenuBtn from "./MobileMenuBtn";
 
 const Header: React.FC = () => {
   return (
@@ -48,7 +48,7 @@ const Header: React.FC = () => {
           />
         </div>
         <menu className="block md:hidden">
-          <MobileMenu />
+          <MobileMenuBtn />
         </menu>
       </header>
     </>
