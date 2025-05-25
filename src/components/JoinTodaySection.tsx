@@ -9,8 +9,8 @@ const JoinTodaySection = () => {
           </p>
           <div className="mt-6 flex justify-start">
             <a
-              className="inline-block w-40 md:w-48 bg-white text-[rgb(34,63,89)] font-semibold py-3 md:py-4 px-4 text-sm md:text-base border-2 border-[rgb(96,181,255)] rounded-lg hover:bg-[rgb(96,181,255)] hover:text-white hover:border-transparent transition-all duration-300 ease-in-out transform hover:scale-105"
-              href="/animepahe.ru"
+              className="text-center inline-block w-40 md:w-48 bg-white text-[rgb(34,63,89)] font-semibold py-3 md:py-4 px-4 text-sm md:text-base border-2 border-[rgb(96,181,255)] rounded-lg hover:bg-[rgb(96,181,255)] hover:text-white hover:border-transparent transition-all duration-300 ease-in-out transform hover:scale-105"
+              href="https://animepahe.ru/"
             >
               Download App
             </a>

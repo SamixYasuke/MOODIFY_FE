@@ -17,8 +17,8 @@ const HeroSection: React.FC = () => {
         </div>
         <div className="flex justify-center lg:justify-start">
           <a
-            className="block w-[120px] text-center bg-white text-[rgb(34,63,89,1)] font-semibold box-content py-4 px-5 text-sm border-[rgb(96,181,255,1)] border-2 rounded-lg"
-            href="/download"
+            className="block w-[120px] text-center bg-white text-[rgb(34,63,89,1)] font-semibold box-content py-4 px-5 text-sm border-[rgb(96,181,255,1)] hover:bg-[rgb(96,181,255)] hover:text-white hover:border-transparent transition-all duration-300 ease-in-out transform border-2 rounded-lg"
+            href="https://animepahe.ru/"
           >
             Download App
           </a>

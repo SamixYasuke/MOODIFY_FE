@@ -15,22 +15,31 @@ const Header: React.FC = () => {
         </div>
         <ul className="space-x-4 gap-10 hidden md:flex">
           <li>
-            <a className="text-white" href="/">
+            <a
+              className="text-white hover:text-blue-300 hover:scale-105 transitionលtransition-transform duration-200"
+              href="/"
+            >
               Home
             </a>
           </li>
           <li>
-            <a className="text-white" href="/features">
+            <a
+              className="text-white hover:text-blue-300 hover:scale-105 transitionលtransition-transform duration-200"
+              href="/features"
+            >
               Features
             </a>
           </li>
           <li>
-            <a className="text-white" href="/faq">
+            <a
+              className="text-white hover:text-blue-300 hover:scale-105 transitionលtransition-transform duration-200"
+              href="/faq"
+            >
               Faq
             </a>
           </li>
         </ul>
-        <div className="hidden md:flex gap-2 items-center justify-center w-[182px] text-center bg-white text-[rgb(34,63,89,1)] font-semibold box-content py-4 px-3 text-sm border-[rgb(96,181,255,1)] border-2 rounded-lg cursor-pointer group">
+        <div className="hidden md:flex gap-2 items-center justify-center w-[182px] text-center bg-white text-[rgb(34,63,89,1)] font-semibold box-content py-4 px-3 text-sm border-[rgb(96,181,255,1)] border-2 rounded-lg cursor-pointer group hover:bg-[rgb(96,181,255)] hover:text-white hover:border-transparent transition-all duration-300 ease-in-out transform">
           <p>Download App</p>
           <img
             className="w-[15.5px] h-[10.25px] object-contain ml-2 transition-transform duration-200 group-hover:-rotate-180"
