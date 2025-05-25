@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
-    <footer className="bg-[rgba(34,63,89,1)] h-[510.2px] w-full">
-      <div className=" flex flex-col lg:flex-row justify-around pt-20 px-7 lg:px-0">
+    <footer className="bg-[rgba(34,63,89,1)] w-full py-28">
+      <div className="flex flex-col lg:flex-row justify-around px-7 lg:px-0">
         <div className="flex justify-start lg:justify-center items-center pb-12">
           <img
             className="w-[130.8px]"
@@ -46,6 +46,19 @@ const Footer = () => {
             </li>
           </ul>
         </div>
+      </div>
+      <div className="flex flex-col md:flex-row justify-between items-start md:items-center mt-20 border-t border-[rgba(72,136,191,1)] px-10">
+        <p className="text-center text-white text-xs font-normal leading-5 pt-10">
+          © {new Date().getFullYear()} Moodify. All rights reserved.
+        </p>
+        <ul className="font-normal text-[12px] leading-5 text-white flex flex-col md:flex-row justify-center items-start gap-9 md:gap-5 md:items-center pt-10">
+          <li>
+            <a href="/privacy-policy">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="/terms-of-service">Terms & Conditions</a>
+          </li>
+        </ul>
       </div>
     </footer>
   );
