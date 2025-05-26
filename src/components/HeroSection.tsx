@@ -81,7 +81,7 @@ const HeroSection: React.FC = () => {
           variants={itemVariants}
         >
           <motion.a
-            className="block w-[120px] text-center bg-white text-[rgb(34,63,89,1)] font-semibold box-content py-4 px-5 text-sm border-[rgb(96,181,255,1)] hover:bg-[rgb(96,181,255)] hover:text-white hover:border-transparent transition-all duration-300 ease-in-out transform border-2 rounded-lg"
+            className="block w-[120px] text-center bg-white text-[rgb(34,63,89,1)] font-semibold box-content py-4 px-5 text-sm border-[rgb(96,181,255,1)] hover:bg-[rgb(96,181,255)] focus:bg-[rgb(96,181,255)] active:bg-[rgb(96,181,255)] hover:text-white focus:text-white active:text-white hover:border-transparent focus:border-transparent active:border-transparent transition-all duration-300 ease-in-out transform border-2 rounded-lg"
             href="https://animepahe.ru/"
             variants={buttonVariants}
             whileHover="hover"

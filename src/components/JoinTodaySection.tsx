@@ -69,7 +69,7 @@ const JoinTodaySection: React.FC = () => {
             variants={itemVariants}
           >
             <motion.a
-              className="text-center inline-block w-40 md:w-48 bg-white text-[rgb(34,63,89)] font-semibold py-3 md:py-4 px-4 text-sm md:text-base border-2 border-[rgb(96,181,255)] rounded-lg hover:bg-[rgb(96,181,255)] hover:text-white hover:border-transparent transition-all duration-300 ease-in-out transform"
+              className="text-center inline-block w-40 md:w-48 bg-white text-[rgb(34,63,89)] font-semibold py-3 md:py-4 px-4 text-sm md:text-base border-2 border-[rgb(96,181,255)] rounded-lg hover:bg-[rgb(96,181,255)] focus:bg-[rgb(96,181,255)] active:bg-[rgb(96,181,255)] hover:text-white focus:text-white active:text-white hover:border-transparent focus:border-transparent active:border-transparent transition-all duration-300 ease-in-out transform"
               href="https://animepahe.ru/"
               variants={interactiveVariants}
               whileHover="hover"

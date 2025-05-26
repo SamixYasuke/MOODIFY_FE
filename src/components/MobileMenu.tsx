@@ -30,7 +30,7 @@ const MobileMenu = ({ isOpen, toggleMenu }: MobileMenuProps) => {
             <li>
               <a
                 href="/home"
-                className="hover:text-blue-300 hover:scale-105 transition-transform duration-200"
+                className="hover:text-blue-300 focus:text-blue-300 active:text-blue-300 hover:scale-105 focus:scale-105 active:scale-105 transition-transform duration-200"
                 onClick={toggleMenu}
               >
                 Home
@@ -39,7 +39,7 @@ const MobileMenu = ({ isOpen, toggleMenu }: MobileMenuProps) => {
             <li>
               <a
                 href="/features"
-                className="hover:text-blue-300 hover:scale-105 transition-transform duration-200"
+                className="hover:text-blue-300 focus:text-blue-300 active:text-blue-300 hover:scale-105 focus:scale-105 active:scale-105 transition-transform duration-200"
                 onClick={toggleMenu}
               >
                 Features
@@ -48,7 +48,7 @@ const MobileMenu = ({ isOpen, toggleMenu }: MobileMenuProps) => {
             <li>
               <a
                 href="/faqs"
-                className="hover:text-blue-300 hover:scale-105 transition-transform duration-200"
+                className="hover:text-blue-300 focus:text-blue-300 active:text-blue-300 hover:scale-105 focus:scale-105 active:scale-105 transition-transform duration-200"
                 onClick={toggleMenu}
               >
                 FAQs
@@ -56,7 +56,7 @@ const MobileMenu = ({ isOpen, toggleMenu }: MobileMenuProps) => {
             </li>
             <div className="mt-6 flex justify-center items-center w-full">
               <a
-                className="text-center inline-block w-40 md:w-48 bg-white text-[rgb(34,63,89)] font-semibold py-3 md:py-4 px-4 text-sm md:text-base border-2 border-[rgb(96,181,255)] rounded-lg hover:bg-[rgb(96,181,255)] hover:text-white hover:border-transparent transition-all duration-300 ease-in-out transform hover:scale-105"
+                className="text-center inline-block w-40 md:w-48 bg-white text-[rgb(34,63,89)] font-semibold py-3 md:py-4 px-4 text-sm md:text-base border-2 border-[rgb(96,181,255)] rounded-lg hover:bg-[rgb(96,181,255)] active:bg-[rgb(96,181,255)] focus:bg-[rgb(96,181,255)] hover:text-white focus:text-white active:text-white hover:border-transparent active:border-transparent focus:border-transparent transition-all duration-300 ease-in-out transform hover:scale-105"
                 href="https://animepahe.ru/"
               >
                 Download App
