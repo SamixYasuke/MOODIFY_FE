@@ -2,12 +2,12 @@ import { useState } from "react";
 import { FaPlus, FaMinus } from "react-icons/fa6";
 import * as motion from "motion/react-client";
 
-const FaqSection = () => {
-  interface FaqContent {
-    question: string;
-    answer: string;
-  }
+interface FaqContent {
+  question: string;
+  answer: string;
+}
 
+const FaqSection = () => {
   const faqContents: FaqContent[] = [
     {
       question: "What is Moodify?",
@@ -37,25 +37,62 @@ const FaqSection = () => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2,
+        delayChildren: 0.1,
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.6,
+        ease: "easeOut",
+      },
+    },
+  };
+
   return (
-    <section className="py-10 flex justify-center items-center">
+    <motion.section
+      className="py-10 flex justify-center items-center"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.2 }}
+      variants={containerVariants}
+    >
       <div className="w-[588px]">
-        <h2 className="text-[rgb(34,63,89,1)] font-semibold text-[20px] text-center py-14">
+        <motion.h2
+          className="text-[rgb(34,63,89,1)] font-semibold text-[20px] text-center py-14"
+          variants={itemVariants}
+        >
           Frequently asked questions
-        </h2>
-        <div className="px-6">
+        </motion.h2>
+        <motion.div className="px-6" variants={containerVariants}>
           {faqContents.map((faq, index) => (
             <motion.div
               key={index}
               className="rounded-4xl p-7 mb-4"
-              initial={{ backgroundColor: "rgb(255, 255, 255)" }}
+              initial={{
+                backgroundColor: "rgb(255, 255, 255)",
+                ...itemVariants.hidden,
+              }}
               animate={{
                 backgroundColor:
                   openIndex === index
                     ? "rgb(246, 246, 246)"
                     : "rgb(255, 255, 255)",
+                ...itemVariants.visible,
               }}
               transition={{ duration: 0.3, ease: "easeInOut" }}
+              variants={itemVariants}
             >
               <div
                 className="flex items-center justify-between cursor-pointer"
@@ -89,9 +126,9 @@ const FaqSection = () => {
               )}
             </motion.div>
           ))}
-        </div>
+        </motion.div>
       </div>
-    </section>
+    </motion.section>
   );
 };
 
