@@ -68,14 +68,14 @@ const FaqSection = () => {
       viewport={{ once: true, amount: 0.2 }}
       variants={containerVariants}
     >
-      <div className="w-[588px]">
+      <div className="w-[92%]">
         <motion.h2
           className="text-[rgb(34,63,89,1)] font-semibold text-[20px] text-center py-14"
           variants={itemVariants}
         >
           Frequently asked questions
         </motion.h2>
-        <motion.div className="px-6" variants={containerVariants}>
+        <motion.div variants={containerVariants}>
           {faqContents.map((faq, index) => (
             <motion.div
               key={index}

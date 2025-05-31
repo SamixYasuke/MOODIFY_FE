@@ -33,7 +33,7 @@ const MoodPlanningSection: React.FC = () => {
       viewport={{ once: true, amount: 0.2 }}
       variants={containerVariants}
     >
-      <div className="mx-auto max-w-[90%] sm:max-w-[85%] md:max-w-[80%] my-16 md:my-20 lg:my-28">
+      <div className="mx-auto max-w-[90%] sm:max-w-[85%] md:max-w-[92%] my-16 md:my-20 lg:my-28">
         <motion.div
           className="bg-[rgb(246,246,246)] flex flex-col lg:flex-row items-center lg:items-start lg:justify-between px-4 sm:px-6 md:px-8 lg:px-12 rounded-4xl"
           variants={itemVariants}

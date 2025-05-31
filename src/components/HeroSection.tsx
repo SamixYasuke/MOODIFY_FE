@@ -46,7 +46,7 @@ const buttonVariants = {
 const HeroSection: React.FC = () => {
   return (
     <motion.main
-      className="bg-[rgb(34,60,83)] flex flex-col gap-6 md:gap-8 lg:gap-12 lg:flex-row items-center justify-between py-10 px-5 lg:px-14"
+      className="bg-[rgb(34,60,83)] flex flex-col gap-6 md:gap-8 lg:gap-12 lg:flex-row items-center justify-between py-10 px-5 lg:px-20"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, amount: 0.2 }}
