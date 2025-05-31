@@ -56,7 +56,7 @@ const Footer = () => {
           <ul className="flex flex-col lg:flex-row justify-center items-start lg:items-center gap-10 text-white font-semibold text-sm leading-6">
             <li>
               <a
-                href="/instagram"
+                href="https://www.instagram.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-blue-300 hover:scale-105 transition-transform duration-200"
@@ -66,7 +66,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="/x"
+                href="https://x.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-blue-300 hover:scale-105 transition-transform duration-200"
@@ -76,7 +76,7 @@ const Footer = () => {
             </li>
             <li>
               <a
-                href="/linkedin"
+                href="https://www.linkedin.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hover:text-blue-300 hover:scale-105 transition-transform duration-200"
