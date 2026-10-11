@@ -4,8 +4,8 @@ Moodify landing page for a mood-based task manager. Hero headline "Productivity 
 
 ## Design
 
-Designed by Frieda Odagboyi.
+Designed by **Frieda Odagboyi**.
 
-- Figma: https://www.figma.com/design/9USBRNtFfUdHFIPqpmGvMo/MOODIFY?node-id=31-909&p=f&t=lfDZfOoQb9lVrG5Z-0
-- LinkedIn: https://www.linkedin.com/in/frieda-odagboyi?originalSubdomain=ng
-- X (Twitter): https://x.com/friedaDcreator
+- **Figma:** [MOODIFY Design](https://www.figma.com/design/9USBRNtFfUdHFIPqpmGvMo/MOODIFY?node-id=31-909&p=f&t=lfDZfOoQb9lVrG5Z-0)
+- **LinkedIn:** [Frieda Odagboyi](https://www.linkedin.com/in/frieda-odagboyi?originalSubdomain=ng)
+- **X (Twitter):** [@friedaDcreator](https://x.com/friedaDcreator)
